@@ -1,0 +1,57 @@
+.header {
+    height: 50px;
+    background-color: blueviolet;
+    margin: 0 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.content {
+    height: 1000px;
+    margin: 16px;
+    margin-top: 60px;
+    position: relative;
+}
+.box-left {
+    width: 30%;
+    height: 300px;
+}
+.box1, .box2, .box3, .box4 {
+    height: 50px;
+    background-color: red;
+    margin: 8px 0;
+}
+.box-right {
+    width: 30%;
+    height: 300px;
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer {
+    height: 50px;
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 8px;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    .box-right {
+        width: 100%;
+        position: relative;
+    }
+}
+@media (max-width: 768px) {
+    .box-left {
+        width: 100%;
+    }
+    .box-right {
+        position: relative;
+        width: 100%;
+    }
+}
